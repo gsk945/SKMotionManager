@@ -8,4 +8,5 @@
     [[SKMotionManager share] startHandling:^{
         NSLog(@"翻转已完成");
     }];
+    
 ```
