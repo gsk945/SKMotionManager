@@ -2,3 +2,10 @@
 
 监听设备屏幕向下翻转特地次数
 可用于一些影藏功能或者debug环境的配置（e.g. 翻转2次展示隐藏关卡，或者翻转4次展示错误日志）
+
+```object-c
+    [[SKMotionManager share] setReversalCount:4];
+    [[SKMotionManager share] startHandling:^{
+        NSLog(@"翻转已完成");
+    }];
+```
